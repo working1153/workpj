@@ -1,0 +1,44 @@
+﻿@model MyWebApp2.Models.Voc
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>刪除單字</h1>
+
+<h3>你確定要刪除此單字?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            單字
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Vocabulary)
+        </dd>
+        <dt class = "col-sm-2">
+            詞性
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PartOfSpeeach)
+        </dd>
+        <dt class = "col-sm-2">
+            詞意
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Meaning)
+        </dd>
+        <dt class = "col-sm-2">
+            例句
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sentence)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="刪除" class="btn btn-danger" />
+        <a class="btn btn-light border border-secondary" asp-action="Index2" asp-route-StackId=@ViewBag.StackId>返回</a>
+    </form>
+</div>

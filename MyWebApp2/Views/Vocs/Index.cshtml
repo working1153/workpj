@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MyWebApp2.Models.Voc>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@ViewBag.StackName</h1>
+<p>
+    <a class="subnav-item" asp-action="Create" asp-route-StackId=@ViewBag?.StackId>新增單字</a>
+    <a class="subnav-item" asp-action="Create2file" asp-route-StackId=@ViewBag?.StackId>從檔案新增單字</a>
+    <a class="subnav-item" asp-action="ToQuest" asp-route-StackId=@ViewBag?.StackId>測驗</a>
+    <a class="subnav-item" asp-action="ToVocstack">單字庫列表</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                單字
+            </th>
+            <th>
+                詞性
+            </th>
+            <th>
+                詞意
+            </th>
+            <th>
+                例句
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vocabulary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartOfSpeeach)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Meaning)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sentence)
+            </td>
+            <td>
+                <a class="subnav-item" asp-action="Edit" asp-route-id="@item.Id">編輯</a>
+                <a class="subnav-item" asp-action="Delete" asp-route-id="@item.Id">刪除</a>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

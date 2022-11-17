@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MyWebApp2.Models.Vocstack>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">新增單字庫</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                單字庫名稱
+            </th>
+            <th>
+                單字數量
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StackName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfVoc)
+            </td>
+            <td>
+                
+                    <a class="subnav-item" asp-action="Edit" asp-route-id="@item.Id">編輯</a> 
+                    <a class="subnav-item" asp-action="Delete" asp-route-id="@item.Id">刪除</a> 
+                    <a class="subnav-item" asp-action="ToVocs" asp-route-StackId="@item.Id">單字列表</a>  
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

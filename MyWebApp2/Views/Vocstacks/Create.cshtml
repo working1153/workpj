@@ -1,0 +1,35 @@
+﻿@model MyWebApp2.Models.Vocstack
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>新增單字庫</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="StackName" class="control-label">單字庫名稱</label>
+                <input asp-for="StackName" class="form-control" />
+                <span asp-validation-for="StackName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="NumOfVoc" class="form-control" value="0"/>
+                <span asp-validation-for="NumOfVoc" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="新增" class="btn btn-primary" />
+                <a class="btn btn-light border border-secondary" asp-action="Index">返回</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

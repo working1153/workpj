@@ -1,0 +1,92 @@
+﻿@model IEnumerable<MyWebApp2.Models.Voc>
+
+<p>
+    <h2 class="font-weight-bold text-success">答對</h2>
+</p>
+<table class="table  w-auto">
+    <thead>
+        <tr>
+            <th>
+                單字
+            </th>
+            <th>
+                詞性
+            </th>
+            <th>
+                詞意
+            </th>
+            <th>
+                句子
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in (List<Voc>)ViewData["Right"]) {
+        <tr class="table-success">
+            <td>
+                @item.Vocabulary
+            </td>
+            <td>
+                @item.PartOfSpeeach
+            </td>
+            <td>
+                @item.Meaning
+            </td>
+            <td>
+                @item.Sentence
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<p>
+    <h2 class="font-weight-bold text-danger">答錯</h2>
+</p>
+<table class="table w-auto">
+    <thead>
+        <tr>
+            <th>
+                單字
+            </th>
+            <th>
+                詞性
+            </th>
+            <th>
+                詞意
+            </th>
+            <th>
+                句子
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach (var item in (List<Voc>)ViewData["Wrong"]) {
+
+        <tr class="table-danger">
+            <td>
+                @item.Vocabulary
+            </td>
+            <td>
+                @item.PartOfSpeeach
+            </td>
+            <td>         
+               @item.Meaning              
+            </td>
+            <td>
+                @item.Sentence
+            </td>      
+        </tr>
+}
+    </tbody>
+</table>
+
+    
+        
+
+<a style="color:black;font-size:30px">分數:</a>
+<a style="color:green;font-size:30px">@ViewBag.Score</a>
+<br />
+<a class="btn btn-light border border-secondary" asp-action="ToVocs" asp-route-StackId=@ViewBag?.StackId>返回單字列表</a>

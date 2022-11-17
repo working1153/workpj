@@ -1,0 +1,24 @@
+﻿@model MyWebApp2.Models.Voc
+<h1>從檔案新增單字</h1>
+<h4>@ViewBag.StackName</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create2fileConfirm" enctype="multipart/form-data">
+            <input asp-for="StackId"  type="hidden" value=@ViewBag.StackId class="form-control" />
+            <p>格式</p>
+            <p>單字｜詞性｜詞意｜例句</p>
+            <p>檔名：exmple.txt(只限txt檔案)</p>
+            <input type="file" accept=".txt" id="myfile" name="myfile">
+            <br />
+            <br />
+            <input type="submit" value="新增" class="btn btn-primary" />
+            <a class="btn btn-light border border-secondary" asp-action="Index2" asp-route-StackId=@ViewBag.StackId>返回單字</a>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

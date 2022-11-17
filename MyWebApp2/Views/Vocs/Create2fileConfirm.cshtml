@@ -1,0 +1,9 @@
+﻿@model MyWebApp2.Models.Voc
+
+@if(ViewBag.isvalid) {
+	<h1 class="text-success">@ViewBag.Message</h1>
+} else {
+	<h1 class="text-danger">@ViewBag.Message</h1>
+}
+<a>@ViewBag.Content</a>
+<a class="btn btn-light border border-secondary" asp-action="Index2" asp-route-StackId=@ViewBag.StackId>返回單字</a>

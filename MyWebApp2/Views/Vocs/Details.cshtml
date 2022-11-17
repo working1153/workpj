@@ -1,0 +1,54 @@
+﻿@model MyWebApp2.Models.Voc
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Voc</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Vocabulary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Vocabulary)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PartOfSpeeach)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PartOfSpeeach)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Meaning)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Meaning)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sentence)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sentence)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StackId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StackId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

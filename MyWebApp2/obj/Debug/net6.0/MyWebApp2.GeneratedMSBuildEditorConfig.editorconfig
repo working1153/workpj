@@ -1,0 +1,144 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyWebApp2
+build_property.RootNamespace = MyWebApp2
+build_property.ProjectDir = D:\vs2022pj\asplearn\MyWebApp2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\vs2022pj\asplearn\MyWebApp2
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Roletest/AddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXRlc3RcQWRkUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Roletest/AddRole2User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXRlc3RcQWRkUm9sZTJVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Roletest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXRlc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/ScBoards/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NCb2FyZHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/ScBoards/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NCb2FyZHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/ScBoards/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NCb2FyZHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/ScBoards/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NCb2FyZHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/ScBoards/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NCb2FyZHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/ScBoards/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NCb2FyZHNcSW5kZXgyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocstacks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc3RhY2tzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocstacks/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc3RhY2tzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocstacks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc3RhY2tzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocstacks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc3RhY2tzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocstacks/Getans.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc3RhY2tzXEdldGFucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocstacks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc3RhY2tzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocstacks/Quest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc3RhY2tzXFF1ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocs/Create2file.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc1xDcmVhdGUyZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocs/Create2fileConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc1xDcmVhdGUyZmlsZUNvbmZpcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Vocs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/vs2022pj/asplearn/MyWebApp2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-l0yk0qsz4y

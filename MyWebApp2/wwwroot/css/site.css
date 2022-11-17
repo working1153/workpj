@@ -1,0 +1,48 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.texthov:hover {
+    color: #adafb1 !important;
+}
+
+.bgg {
+    background-color: #24292f;
+}
+
+.subnav-item {
+    position: relative;
+    float: left;
+    padding: 5px 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: black;
+    border: 1px solid #d0d7de;
+    text-decoration: none;
+}
+.subnav-item:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.subnav-item:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.subnav-item + .subnav-item {
+    margin-left: -1px;
+}

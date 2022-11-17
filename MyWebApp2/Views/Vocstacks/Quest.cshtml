@@ -1,0 +1,74 @@
+﻿@model IEnumerable<MyWebApp2.Models.Voc>
+
+<h1>測驗</h1>
+<form asp-action="GetAns">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    題號
+                </th>
+                <th>
+                    單字
+                </th>
+                <th>
+                    詞性+詞意
+                </th>
+                <th>
+                    句子
+                </th>
+                @if (User.IsInRole("admin"))
+                {
+                    <th>
+                        @Html.DisplayNameFor(model => model.StackId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Count)
+                    </th>
+                }
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{  
+                var i = 0; 
+                List<string> sentence = (List<string>)ViewData["Sentence"];
+            }
+    @foreach (var item in Model) {
+            
+            <tr>
+                <td>
+                    @(i+1).
+                </td>
+                <td>
+                    <input type="text" name="ans[]" >
+                    <input name="id[]" type="hidden" value=@item.Id>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Meaning)
+                    <br/>
+                    @Html.DisplayFor(modelItem => item.PartOfSpeeach)
+                </td>
+                <td>
+                    @sentence[i]
+                </td>
+                @if(User.IsInRole("admin")) {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StackId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Count)
+                    </td>
+                }
+                <td>
+                </td>
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+    
+    <input type="submit" value="送出" class="btn btn-primary" />
+    <a asp-action="ToVocs" asp-route-StackId=@ViewBag?.StackId class="btn btn-light border border-secondary">返回</a>
+</form>
+    

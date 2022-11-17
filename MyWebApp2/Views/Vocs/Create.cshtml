@@ -1,0 +1,55 @@
+﻿@model MyWebApp2.Models.Voc
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>新增單字</h1>
+<h1>@ViewBag.StackName</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Vocabulary" class="control-label">單字</label>
+                <input asp-for="Vocabulary" class="form-control" />
+                <span asp-validation-for="Vocabulary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PartOfSpeeach" class="control-label">詞性</label>
+                <input asp-for="PartOfSpeeach" class="form-control" />
+                <span asp-validation-for="PartOfSpeeach" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Meaning" class="control-label">詞意</label>
+                <input asp-for="Meaning" class="form-control" />
+                <span asp-validation-for="Meaning" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sentence" class="control-label">句子</label>
+                <input asp-for="Sentence" class="form-control" />
+                <span asp-validation-for="Sentence" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="StackId" type="hidden" value=@ViewBag.StackId class="form-control" />
+                <span asp-validation-for="StackId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Count" type="hidden" value="0" class="form-control" />
+                <span asp-validation-for="Count" class="text-danger"></span>
+            </div>
+            </br>
+            <div class="form-group">
+                <input type="submit" value="新增" class="btn btn-primary" />
+                <a class="btn btn-light border border-secondary" asp-action="Index2" asp-route-StackId=@ViewBag.StackId>返回單字</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
